@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section home">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Hi! I'm a [Beginner Software Developer]. Explore my work and get to know me.</p>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>I am Moses i just started software development recently, am still a beginner software developer, but i am
+        looking to get better over time as i keep going at it .</p>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <h2>My Work</h2>
+      <div class="portfolio-items">
+        <!-- Example item -->
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Project: ONE" class="portfolio-img" />
+          <h3>Weather App</h3>
+          <p>The app let's you see your weather status from anywhere in the world in real time
+
+            [Disclaimer: Although I did't finish this project].</p>
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2> Facebook: Moses Elemenya Jnr
+      <p>Email: moseseke0810@gmail.com</p>
+      <button id="backToTop" title="Go to top">↑</button>
+      <script>
+        const backToTopBtn = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.style.display = "block";
+          } else {
+            backToTopBtn.style.display = "none";
+          }
+        });
+
+        backToTopBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      </script>
